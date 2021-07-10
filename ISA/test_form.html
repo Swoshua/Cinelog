@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>test</title> 
+</head>
+
+<body>
+
+
+      <form id="image_form" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" name="pic_image" class="form-control-file" id="exampleFormControlFile1" accept="image/x-png,image/jpeg, image/jpg">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" onclick="testing()">Submit</button>
+        </div>
+      </form>
+      <button type="submit" class="btn btn-primary" onclick="testing()">Submit</button>
+      <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $('#image_form').on('submit', function(e){
+          e.preventDefault()
+        });
+
+    function testing() {
+        console.log("work");
+    }
+  </script>
+    
+</body>
+</html>
